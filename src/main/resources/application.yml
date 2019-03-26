@@ -1,0 +1,17 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /oauth-client
+mallen:
+  oauth:
+    client:
+      clientId: 7297146e40b1ba62fe8710eb604bcb7e
+      clientSecret: 9019e0a9f17bd0a157b67453d75ada5b
+      oauthCallback: http://192.168.133.129:8088/oauth-client/oauthCallback
+      grantType: authorization_code
+    server:
+      authorizeUrl: "http://192.168.133.129:8089/oauth-server/authorize"
+      tokenUrl: "http://192.168.133.129:8089/oauth-server/token"
+logging:
+  level:
+    org.mallen: debug
